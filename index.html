@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0ldskoolerz - Developer & Writer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>0ldskoolerz</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#content">Content</a></li>
+                    <li><a href="#repos">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section - Large & Clean -->
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Building the Web, Sharing Knowledge</h2>
+                    <p class="hero-subtitle">Developer passionate about creating elegant digital experiences and helping others grow through writing, code, and community.</p>
+                    <div class="hero-cta">
+                        <a href="#content" class="btn btn-primary">Explore My Work</a>
+                        <a href="https://github.com/0ldskoolerz" target="_blank" class="btn btn-secondary">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section id="biography" class="biography">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="bio-content">
+                    <div class="bio-text">
+                        <h3>My Journey</h3>
+                        <p>
+                            I'm a passionate web developer and technical writer with a deep interest in creating meaningful digital experiences. 
+                            My journey in tech started with curiosity about how things work on the internet, which evolved into a professional career 
+                            building web applications and sharing knowledge with the community.
+                        </p>
+                        <p>
+                            I believe in clean code, continuous learning, and the power of open source. Through my blogs and projects, I share insights 
+                            about web development, technology trends, and personal growth in the tech industry.
+                        </p>
+                        <h3>What I Do</h3>
+                        <ul class="skills-list">
+                            <li>Full-Stack Web Development</li>
+                            <li>Technical Writing & Blogging</li>
+                            <li>Open Source Contributions</li>
+                            <li>Code Mentoring & Community Engagement</li>
+                        </ul>
+                    </div>
+                    <div class="bio-sidebar">
+                        <div class="stat-card">
+                            <div class="stat-number" id="repo-count">0</div>
+                            <div class="stat-label">Repositories</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Active Blogs</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Articles Written</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section - Blogs & Featured -->
+        <section id="content" class="content-section">
+            <div class="container">
+                <h2>Featured Content</h2>
+                <p class="section-subtitle">My blogs and published work across different platforms</p>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="content-icon">📝</div>
+                        <h3>Personal Blog</h3>
+                        <p>Tutorials, insights, and thoughts on web development, JavaScript, design patterns, and modern development practices.</p>
+                        <div class="content-meta">
+                            <span class="content-badge">Web</span>
+                            <span class="content-badge">Notes</span>
+                        </div>
+                        <a href="https://oldskoolerz.blogspot.com/" target="_blank" class="btn btn-primary">Read Articles</a>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-icon">📰</div>
+                        <h3>La Guardia</h3>
+                        <p>News, stories, and in-depth analysis on current events, technology trends, and cultural topics with a critical perspective.</p>
+                        <div class="content-meta">
+                            <span class="content-badge">News</span>
+                            <span class="content-badge">Analysis</span>
+                        </div>
+                        <a href="https://guardiachile.blogspot.com/" target="_blank" class="btn btn-primary">Read Stories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Repositories Section - Work -->
+        <section id="repos" class="repositories">
+            <div class="container">
+                <h2>My Work</h2>
+                <p class="section-subtitle">Open source projects and code experiments</p>
+                
+                <!-- Category Filter -->
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">
+                        <span>All Projects</span>
+                    </button>
+                    <button class="category-tab" data-category="web">
+                        <span>Web</span>
+                    </button>
+                    <button class="category-tab" data-category="javascript">
+                        <span>JavaScript</span>
+                    </button>
+                    <button class="category-tab" data-category="projects">
+                        <span>Projects</span>
+                    </button>
+                    <button class="category-tab" data-category="other">
+                        <span>Other</span>
+                    </button>
+                </div>
+
+                <!-- Repositories Grid -->
+                <div id="repos-list" class="repo-grid">
+                    <div class="loading">Loading repositories...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <p>Interested in collaboration, have questions, or just want to say hi?</p>
+                <div class="contact-links">
+                    <a href="https://github.com/0ldskoolerz" target="_blank" class="contact-link">
+                        <span class="contact-icon">GitHub</span>
+                    </a>
+                    <a href="https://oldskoolerz.blogspot.com/" target="_blank" class="contact-link">
+                        <span class="contact-icon">Blog</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 0ldskoolerz. Crafted with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
