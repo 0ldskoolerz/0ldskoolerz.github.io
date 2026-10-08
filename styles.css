@@ -10,29 +10,33 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fafafa;
+    color: #2d2d2d;
+    background: #f5f7fb;
+    margin: 0;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header & Navigation */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header */
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
 }
 
 header nav {
-    padding: 1rem 0;
+    padding: 1.1rem 0;
 }
 
 header .container {
@@ -42,236 +46,426 @@ header .container {
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: -0.03em;
+    margin: 0;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
+    margin: 0;
+    padding: 0;
 }
 
 header nav a {
+    color: white;
     text-decoration: none;
-    color: #666;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    opacity: 0.95;
+    transition: opacity 0.2s ease;
 }
 
 header nav a:hover {
-    color: #000;
+    opacity: 1;
 }
 
-/* Sections */
-section {
-    padding: 5rem 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-section:last-of-type {
-    border-bottom: none;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-}
-
-/* Hero Section */
+/* Hero */
 .hero {
-    background-color: #fff;
+    background: linear-gradient(180deg, #f8f9ff 0%, #eef2ff 100%);
+    padding: 7rem 0 5rem;
+}
+
+.hero-content {
     text-align: center;
-    padding: 8rem 0;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.hero p {
-    font-size: 1.3rem;
-    color: #666;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Projects Section */
-.projects {
-    background-color: #fff;
+.hero-title {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #1d2433;
+    margin: 0 0 1rem;
+    letter-spacing: -0.04em;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: #4d5b75;
+    max-width: 700px;
+    margin: 0 auto 2rem;
 }
 
-.project-card {
-    background-color: #f5f5f5;
-    padding: 2rem;
-    border-radius: 4px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.project-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.project-card p {
-    color: #666;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-}
-
-/* Repositories Section */
-.repositories {
-    background-color: #fff;
-}
-
-.repo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.repo-card {
-    background-color: #f5f5f5;
-    padding: 1.5rem;
-    border-radius: 4px;
-    border-left: 4px solid #333;
-    transition: all 0.3s ease;
-}
-
-.repo-card:hover {
-    background-color: #eee;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.repo-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.repo-card .description {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem;
-    min-height: 2.8em;
-}
-
-.repo-meta {
+.hero-cta {
     display: flex;
+    justify-content: center;
     gap: 1rem;
-    font-size: 0.85rem;
-    color: #999;
-    margin-bottom: 1rem;
-}
-
-.repo-link {
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.repo-link:hover {
-    color: #666;
-}
-
-.loading {
-    text-align: center;
-    color: #999;
-    padding: 2rem;
-    font-size: 0.95rem;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #fff;
-    text-align: center;
-}
-
-.contact h2 {
-    margin-bottom: 1rem;
-}
-
-.contact p {
-    color: #666;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    flex-wrap: wrap;
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #333;
-    color: #fff;
+    padding: 0.9rem 1.7rem;
+    border-radius: 999px;
     text-decoration: none;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.28);
+}
+
+.btn-secondary {
+    background: white;
+    color: #667eea;
+    border: 2px solid rgba(102, 126, 234, 0.35);
+}
+
+/* Shared section styles */
+section {
+    padding: 5.5rem 0;
+}
+
+section h2 {
+    font-size: 2.7rem;
+    margin: 0 0 1rem;
+    color: #1d2433;
+    letter-spacing: -0.03em;
+}
+
+.section-subtitle {
+    margin: 0 0 2.5rem;
+    color: #5f6d86;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+/* Biography */
+.biography,
+.content-section,
+.repositories,
+.contact {
+    background: white;
+    margin: 1.5rem 20px;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
+}
+
+.biography .container,
+.content-section .container,
+.repositories .container,
+.contact .container {
+    max-width: 1080px;
+}
+
+.biography h2 {
+    text-align: left;
+}
+
+.bio-content {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.bio-text h3 {
+    font-size: 1.4rem;
+    margin: 1.6rem 0 0.8rem;
+    color: #1d2433;
+}
+
+.bio-text p {
+    color: #4d5b75;
+    line-height: 1.8;
+    margin: 0 0 1rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0.7rem 0;
+    color: #4d5b75;
+}
+
+.skills-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: 700;
+}
+
+.bio-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 14px 30px rgba(102, 126, 234, 0.2);
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.9;
+}
+
+/* Content cards */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.content-card {
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    padding: 2rem;
+    border: 1px solid #edf0f6;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(17, 24, 39, 0.04);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+}
+
+.content-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.content-card h3 {
+    margin: 0 0 0.8rem;
+    font-size: 1.5rem;
+    color: #1d2433;
+}
+
+.content-card p {
+    color: #586983;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.content-meta {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+
+.content-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 999px;
+    padding: 0.38rem 0.8rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Repositories */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.category-tab {
+    background: white;
+    border: 1px solid #e7ebf3;
+    color: #475569;
+    border-radius: 999px;
+    padding: 0.8rem 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.category-tab.active,
+.category-tab:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: transparent;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.repo-card {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
+    border: 1px solid #edf0f6;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+}
+
+.repo-card h3 {
+    margin: 0 0 0.7rem;
+    font-size: 1.2rem;
+}
+
+.repo-card h3 a {
+    color: #1d2433;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.description {
+    color: #57657e;
+    line-height: 1.7;
+    min-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.repo-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: 0.82rem;
+    color: #667085;
+    margin-bottom: 1.2rem;
+}
+
+.repo-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.loading {
+    color: #667085;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.contact h2,
+.contact p {
+    color: white;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    opacity: 0.95;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-weight: 700;
 }
 
 /* Footer */
 footer {
-    background-color: #f5f5f5;
-    padding: 2rem 0;
+    background: #1d2433;
+    color: #c8d0e0;
     text-align: center;
-    color: #999;
-    font-size: 0.9rem;
-    border-top: 1px solid #e0e0e0;
+    padding: 2rem 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 760px) {
     header .container {
         flex-direction: column;
         gap: 1rem;
+        text-align: center;
     }
 
     header nav ul {
-        gap: 1rem;
-        font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    .project-grid {
+    .bio-content {
         grid-template-columns: 1fr;
     }
 
-    .repo-grid {
-        grid-template-columns: 1fr;
+    .hero {
+        padding-top: 5rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: min(100%, 260px);
+        text-align: center;
+    }
+
+    .biography,
+    .content-section,
+    .repositories,
+    .contact {
+        margin-left: 12px;
+        margin-right: 12px;
     }
 }
