@@ -1,0 +1,101 @@
+[
+  {
+    "name": "0ldskoolerz.github.io",
+    "description": "Sitio web personal en GitHub Pages",
+    "html_url": "https://github.com/0ldskoolerz/0ldskoolerz.github.io",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-18T13:01:11Z"
+  },
+  {
+    "name": "blogger-xml-extractor",
+    "description": "Script en Python para extraer artículos de Google Blogger desde archivos XML de respaldo y guardarlos en archivos TXT separados",
+    "html_url": "https://github.com/0ldskoolerz/blogger-xml-extractor",
+    "homepage": null,
+    "language": null,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-09T05:42:04Z"
+  },
+  {
+    "name": "w3m-pi",
+    "description": "w3m-pi for Zero",
+    "html_url": "https://github.com/0ldskoolerz/w3m-pi",
+    "homepage": null,
+    "language": "Shell",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-08T10:22:43Z"
+  },
+  {
+    "name": "w3m-linux",
+    "description": "Busybox and Builroot + W3M",
+    "html_url": "https://github.com/0ldskoolerz/w3m-linux",
+    "homepage": null,
+    "language": "Shell",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-08T10:17:15Z"
+  },
+  {
+    "name": "w3m-net",
+    "description": "Net Tools",
+    "html_url": "https://github.com/0ldskoolerz/w3m-net",
+    "homepage": null,
+    "language": "C",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-08T10:14:43Z"
+  },
+  {
+    "name": "w3m-apps",
+    "description": "Suite de apps Win 3.x para W3M: explorador, terminal, tareas, calculadora y notepad — Xlib + busybox",
+    "html_url": "https://github.com/0ldskoolerz/w3m-apps",
+    "homepage": null,
+    "language": "C",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-08T10:14:42Z"
+  },
+  {
+    "name": "W3M",
+    "description": "W3M - X11 VM for Linux",
+    "html_url": "https://github.com/0ldskoolerz/W3M",
+    "homepage": null,
+    "language": "C",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-08T10:14:31Z"
+  },
+  {
+    "name": "win3wm",
+    "description": "Gestor de ventanas minimalista estilo Openbox/Blackbox con estética Windows 3.x — C + raylib + plugins Lua",
+    "html_url": "https://github.com/0ldskoolerz/win3wm",
+    "homepage": null,
+    "language": "C",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-08T10:14:20Z"
+  },
+  {
+    "name": "simple-blog",
+    "description": "A clean and simple Blogspot theme with customizable colors, fonts, and responsive design",
+    "html_url": "https://github.com/0ldskoolerz/simple-blog",
+    "homepage": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "topics": [],
+    "updated_at": "2026-10-08T07:46:02Z"
+  }
+]
